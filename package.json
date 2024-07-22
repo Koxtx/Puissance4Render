@@ -1,0 +1,20 @@
+{
+  "name": "puissance4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon API/index.js",
+    "start": "node API/index.js",
+    "build": "npm i & npm i --prefix FRONT & npm i --prefix API && npm run build --prefix FRONT"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
