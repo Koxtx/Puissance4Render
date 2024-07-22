@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/users";
+const BASE_URL = "https://puissance4render-1.onrender.com/api/users";
 
 export async function signup(values) {
   try {

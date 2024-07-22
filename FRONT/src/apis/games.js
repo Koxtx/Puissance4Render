@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/games";
+const BASE_URL = "https://puissance4render-1.onrender.com/api/games";
 
 export async function getGameStatus(gameId) {
   console.log(`Fetching game status for gameId: ${gameId}`);
