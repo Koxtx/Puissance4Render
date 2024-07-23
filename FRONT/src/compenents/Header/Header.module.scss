@@ -1,5 +1,6 @@
+@use "../../assets/styles/mixin" as mixin;
 .header {
-  background-color: #2d3748;
+  background-color: #121212;
   color: #f7fafc;
   position: relative;
   width: 100%;
@@ -7,12 +8,18 @@
   a {
     text-decoration: none;
     color: #f7fafc;
+    @include mixin.xs {
+      font-size: small;
+    }
   }
   .title {
     width: 95%;
     color: #f7fafc;
     h1 {
       color: #f7fafc;
+    }
+    @include mixin.xs {
+      font-size: small;
     }
   }
   .nav {
