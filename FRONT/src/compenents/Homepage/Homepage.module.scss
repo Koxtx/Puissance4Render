@@ -29,12 +29,14 @@
     align-items: center;
     justify-content: center;
     height: auto;
+    margin-top: 50px;
     @include mixin.xs {
       margin-top: 80px;
       margin-bottom: 20px;
     }
   }
   .btnreset {
+    margin-top: 20px;
     @include mixin.xs {
       display: flex;
       flex-direction: column-reverse;
