@@ -20,9 +20,7 @@ export default function SocketProvider({ children }) {
         setOnlineUsers(users);
       });
 
-      newSocket.on("disconnect", () => {
-        console.log("Socket disconnected");
-      });
+      newSocket.on("disconnect", () => {});
 
       return () => {
         newSocket.disconnect();

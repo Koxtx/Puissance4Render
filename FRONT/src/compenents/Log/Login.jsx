@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signin } from "../../apis/users";
 import { UserContext } from "../../context/UserContext";
-import styles from "./Login.module.scss"
+import styles from "./Login.module.scss";
 
 export default function Login() {
   const [feedback, setFeedback] = useState("");
@@ -34,10 +34,9 @@ export default function Login() {
   });
 
   async function submit(values) {
-    // console.log(values);
     try {
       const response = await signin(values);
-      // console.log(response);
+
       if (!response.message) {
         localStorage.setItem("user", JSON.stringify(response));
         setConnectedUser(response.user);

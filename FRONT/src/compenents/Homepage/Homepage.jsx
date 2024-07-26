@@ -30,11 +30,9 @@ export default function Homepage() {
 
   useEffect(() => {
     if (socket) {
-      console.log("Joining game...");
       socket.emit("joinGame", { playerId: user._id, username: user.username });
 
       socket.on("updateBoard", ({ board, currentPlayer }) => {
-        console.log("Board updated:", board);
         setBoard(board);
         setIsRedNext(currentPlayer === "R");
       });
@@ -45,7 +43,6 @@ export default function Homepage() {
       });
 
       socket.on("gameOver", ({ winner, winningCells }) => {
-        console.log("Game over:", winner);
         setWinner(winner);
         setWinningCells(winningCells);
       });
@@ -89,7 +86,6 @@ export default function Homepage() {
     }
 
     if (rowIndex !== null) {
-      console.log(`Making move: row ${rowIndex}, col ${colIndex}`);
       setDroppingColumn(colIndex);
       setDroppingRow(rowIndex);
       setDroppingColor(isRedNext ? "R" : "Y");

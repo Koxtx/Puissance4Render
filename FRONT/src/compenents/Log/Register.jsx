@@ -44,10 +44,9 @@ export default function Register() {
   });
 
   async function submit(values) {
-    console.log(values);
     try {
       const response = await signup(values);
-      console.log(response);
+
       setFeedback(response.message);
       if (response.message !== "Email déjà existant") {
         navigate("/login");
