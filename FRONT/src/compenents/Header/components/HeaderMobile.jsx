@@ -17,7 +17,7 @@ export default function HeaderMobile({ setShowMenu }) {
               className={`mr-5 `}
               to="/regledujeu"
             >
-              Règle du jeu
+              Règles du jeu
             </NavLink>
             <NavLink
               to="/"

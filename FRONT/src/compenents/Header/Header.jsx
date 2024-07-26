@@ -22,7 +22,7 @@ export default function Header() {
             <>
               <div className={`${styles.burgerMenu}`}>
                 <NavLink className={`mr-20 `} to="/regledujeu">
-                  Règle du jeu
+                  Règles du jeu
                 </NavLink>
                 <NavLink to="/logout" className={`mr-5`}>
                   Logout
