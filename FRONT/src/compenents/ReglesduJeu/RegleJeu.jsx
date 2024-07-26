@@ -11,8 +11,8 @@ export default function RegleJeu() {
       </p>
       <h2>Matériel :</h2>
       <ul>
-        <li>Un plateau de jeu composé de 6 rangées et 7 colonnes.</li>
-        <li>Deux couleurs de jetons</li>
+        <li>-Un plateau de jeu composé de 6 rangées et 7 colonnes.</li>
+        <li>-Deux couleurs de jetons</li>
       </ul>
       <h2>Déroulement du jeu :</h2>
       <ol>
