@@ -27,4 +27,29 @@
     height: 100%;
     border-top-right-radius: 1000px;
   }
+  .burgerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    a {
+      text-decoration: none;
+      margin-right: 30px;
+    }
+    @include mixin.sm-lt {
+      display: none;
+    }
+  }
+  .mobileHeader {
+    font-size: 2.2rem;
+    display: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    @include mixin.sm-lt {
+      display: block;
+      font-size: 1.8rem;
+    }
+  }
 }
