@@ -1,1 +1,1 @@
-![puissance4](./FRONT/asset/capture_puissance4.png)
+![capture_puissance4](./FRONT/asset/capture_puissance4.png)
